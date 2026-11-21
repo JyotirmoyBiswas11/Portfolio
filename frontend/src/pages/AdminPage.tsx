@@ -835,7 +835,7 @@ export function AdminPage() {
                 <Upload className="h-8 w-8 text-[var(--color-muted)] mx-auto mb-2" />
                 <p className="text-xs font-semibold mb-1">Click to select new CV PDF</p>
                 <p className="text-[10px] text-[var(--color-muted)] mb-3">
-                  Uploads directly to Cloud Storage bucket: <code className="font-mono">bigcommerce-widgets.appspot.com</code>
+                  Uploads directly to Cloud Storage bucket: <code className="font-mono">porfolio-biswas.firebasestorage.app</code>
                 </p>
                 <label className="inline-flex items-center gap-2 h-9 px-4 rounded-lg bg-[var(--color-primary)] text-white text-xs font-semibold cursor-pointer hover:opacity-90 transition-opacity">
                   <span>{uploadingCV ? 'Uploading to Storage...' : 'Select PDF File'}</span>

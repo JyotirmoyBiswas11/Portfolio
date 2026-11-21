@@ -9,7 +9,7 @@ A production-grade, SaaS-like personal developer portfolio designed with a Linea
 - **Frontend Core**: React 19, TypeScript (strict, zero `any`), Vite 6, Tailwind CSS v4
 - **State & Data**: Zustand (persistent dark/light theme), TanStack Query v5
 - **Animations & UI**: Framer Motion, Class Variance Authority (`cva`), Lucide Icons, Custom SVG Brand Vectors
-- **Firebase Services (Production Project `bigcommerce-widgets`)**:
+- **Firebase Services (Production Project `porfolio-biswas`)**:
   - **Firestore Database**: Dedicated database `pmtool`
   - **Firebase App Check**: ALWAYS enforced with standard reCAPTCHA v3 (`6LeSzZAqAAAAAOaGsXNfNwXvaOv15ZCcwc7jdeET`)
   - **Firebase Authentication**: Email & Password for private Admin CMS
@@ -47,7 +47,7 @@ A production-grade, SaaS-like personal developer portfolio designed with a Linea
 
 ```
 Portfolio/
-├── .firebaserc                     # Firebase default project: bigcommerce-widgets
+├── .firebaserc                     # Firebase default project: porfolio-biswas
 ├── firebase.json                   # Hosting & Firestore deploy configuration
 ├── firestore.rules                 # Strict security rules for pmtool database
 ├── firestore.indexes.json          # Composite indexes for querying & ordering
@@ -108,7 +108,7 @@ This runs `tsc -b` for strict type checking followed by Vite production bundling
 ## 🔐 Admin CMS & First-Time Setup (`/admin`)
 
 1. Navigate to `/admin` or click the lock icon in the footer.
-2. Sign in with your Firebase Auth email & password for the `bigcommerce-widgets` project.
+2. Sign in with your Firebase Auth email & password for the `porfolio-biswas` project.
 3. Once logged in:
    - **1-Click Seed `pmtool` DB**: Click the button in the top right to instantly write all 6 verified projects and your profile into your Firestore `pmtool` database.
    - **Projects Management**: Add, edit, or delete projects, toggle live status or featured flags.
