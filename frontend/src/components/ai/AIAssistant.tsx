@@ -14,10 +14,10 @@ interface Message {
 }
 
 const SUGGESTED_QUESTIONS = [
+  'Tell me about DataLens AI (Agentic Extractor).',
   'What is Jyotirmoy’s availability in Munich?',
   'Tell me about his SaaS work on Octopus.',
   'What are his core backend & cloud skills?',
-  'How does he bridge Full-Stack with BI?',
 ]
 
 export function AIAssistant() {
@@ -193,7 +193,18 @@ BEHAVIORAL RULES:
         let answer = ''
         const lower = trimmed.toLowerCase()
 
-        if (lower.includes('availab') || lower.includes('work') || lower.includes('visa') || lower.includes('permit') || lower.includes('student')) {
+        if (lower.includes('datalens') || lower.includes('extractor') || lower.includes('agentic') || lower.includes('csv')) {
+          answer = `**DataLens AI (Agentic AI Data Value Extractor)** is an enterprise SaaS platform architected by Jyotirmoy. It ingests unstructured CSV business records and executes a 4-Stage Gemini 1.5 Flash AI Agent pipeline:
+1. Column Schema & Type Classification
+2. Anomaly & Data Cleanliness Auditing (0-100 Score)
+3. Quantitative KPI Extraction (totals, growth, trends)
+4. Dynamic Visualization & Aggregation Specs rendered with Recharts.
+
+• **Architecture**: React 19 Frontend + Express.js Backend on GCP Cloud Run
+• **Storage & Security**: Firebase Cloud Storage with resumable uploads, App Check (reCAPTCHA v3), and Firestore (\`pmtool\` database)
+• **Live Demo**: https://my-projects-2562a.web.app/
+• **GitHub Repo**: https://github.com/JyotirmoyBiswas11/agentic-ai-data-extractor`
+        } else if (lower.includes('availab') || lower.includes('work') || lower.includes('visa') || lower.includes('permit') || lower.includes('student')) {
           answer = `Jyotirmoy is currently living in Munich (Rumfordstr. 32) and is actively open to **Werkstudent Software Engineering** positions. He holds a §16b German student residence permit, granting him legal work authorization for 140 full days or 280 half days per calendar year.`
         } else if (lower.includes('octopus') || lower.includes('saas') || lower.includes('pravaah')) {
           answer = `At Pravaah Consulting, Jyotirmoy was a core contributor to **Octopus SaaS** (app.octopussaas.com), an enterprise medical waste and logistics compliance platform used by 10,000+ daily active users. He architected Fleet Routing, HIPAA billing modules, multi-level organizational trees, and migrated 50,000+ records with zero data loss using Firebase Cloud Tasks.`

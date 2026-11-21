@@ -211,13 +211,13 @@ function TerminalWidget() {
         <div className="pl-4 text-[var(--color-muted)]">
           experience: [
           <div className="pl-4 text-amber-500 dark:text-amber-300">
-            &apos;Octopus SaaS (10k+ users)&apos;,
+            &apos;DataLens AI (4-Stage Gemini Agent)&apos;,
           </div>
           <div className="pl-4 text-amber-500 dark:text-amber-300">
-            &apos;50k+ Cloud Record Migrations&apos;,
+            &apos;Octopus SaaS (10k+ users, HIPAA)&apos;,
           </div>
           <div className="pl-4 text-amber-500 dark:text-amber-300">
-            &apos;Mediguide AI Clinical Transcriber&apos;
+            &apos;50k+ Cloud Record Migrations&apos;
           </div>
           ],
         </div>

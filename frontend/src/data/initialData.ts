@@ -21,11 +21,11 @@ export const INITIAL_PROFILE: Omit<Profile, 'updatedAt'> & { updatedAt?: Timesta
     },
     {
       category: 'Backend, Cloud & DB',
-      items: ['Firebase (Firestore, Auth, Storage)', 'Google Cloud Platform (GCP)', 'RESTful APIs', 'SQL', 'Cloud Functions', 'Cloud Tasks'],
+      items: ['Firebase (Firestore, Auth, Storage)', 'Google Cloud Platform (GCP)', 'RESTful APIs', 'SQL', 'Cloud Functions', 'Cloud Tasks', 'Express.js', 'Docker'],
     },
     {
       category: 'Data & BI',
-      items: ['Business Intelligence', 'Data Science', 'Data Pipelines', 'ETL', 'Machine Learning', 'CNNs'],
+      items: ['Business Intelligence', 'Data Science', 'Data Pipelines', 'ETL', 'Machine Learning', 'CNNs', 'Recharts'],
     },
     {
       category: 'DevOps & Tools',
@@ -97,6 +97,31 @@ export const INITIAL_PROFILE: Omit<Profile, 'updatedAt'> & { updatedAt?: Timesta
 
 export const INITIAL_PROJECTS: Array<Omit<Project, 'createdAt' | 'updatedAt'>> = [
   {
+    id: 'agentic-ai-data-extractor',
+    title: 'Agentic AI Data Value Extractor (DataLens AI)',
+    slug: 'agentic-ai-data-extractor-datalens',
+    category: 'AI/Data',
+    status: 'published',
+    featured: true,
+    coverImageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+    shortDescription:
+      'Enterprise SaaS portal uploading unstructured CSV records & extracting decision intelligence via a 4-stage Gemini AI Agent pipeline.',
+    businessProblem:
+      'Raw business CSV exports from sales and analytics platforms are messy and time-consuming to synthesize. Engineered a 4-stage Gemini 1.5 Flash agent (Schema Classification, Anomaly/Cleanliness 0-100 Auditing, Quantitative KPI Extraction, and Dynamic Visualization Specs) deployed on GCP Cloud Run with App Check verification.',
+    techStack: [
+      'React 19',
+      'TypeScript',
+      'Express.js',
+      'GCP Cloud Run',
+      'Gemini 1.5 Flash',
+      'Firebase App Check',
+      'Recharts',
+      'Firestore (pmtool)',
+    ],
+    liveUrl: 'https://my-projects-2562a.web.app/',
+    githubUrl: 'https://github.com/JyotirmoyBiswas11/agentic-ai-data-extractor',
+  },
+  {
     id: 'octopus-saas',
     title: 'Octopus SaaS — Enterprise Logistics & Compliance Platform',
     slug: 'octopus-saas-enterprise-logistics',
@@ -129,20 +154,20 @@ export const INITIAL_PROJECTS: Array<Omit<Project, 'createdAt' | 'updatedAt'>> =
     githubUrl: 'https://github.com/JyotirmoyBiswas11',
   },
   {
-    id: 'mediguide-ai-extractor',
-    title: 'Mediguide AI — Clinical Intelligence & Consultation Extractor',
-    slug: 'mediguide-ai-consultation-extractor',
-    category: 'AI/Data',
+    id: 'google-meet-ai-bot',
+    title: 'Google Meet AI Telemetry & Real-Time Event Bot',
+    slug: 'google-meet-ai-telemetry-bot',
+    category: 'IoT',
     status: 'published',
     featured: true,
-    coverImageUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
+    coverImageUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
     shortDescription:
-      'Healthcare AI application that captures consultation audio, transcribes doctor-patient dialogues, and generates structured clinical summaries.',
+      'Automated meeting participant bot connecting Google Meet API with GCP Pub/Sub to track live telemetric events and deliver structured summaries.',
     businessProblem:
-      'Physicians spend excessive hours writing medical records, driving clinical burnout. Engineered a speech transcription and LLM extraction flow to automate structured EHR notes and diagnosis summaries.',
-    techStack: ['React.js', 'Node.js', 'Firebase', 'Gemini AI API', 'Web Audio API'],
-    liveUrl: 'https://app.octopussaas.com',
-    githubUrl: 'https://github.com/JyotirmoyBiswas11',
+      'Distributed field operations required automated action item capture and incident logging from dispatch coordination calls. Designed an event-driven bot that ingests live streams and posts structured JSON summaries to internal webhooks.',
+    techStack: ['Python', 'Google Meet API', 'GCP Pub/Sub', 'Webhooks', 'REST APIs'],
+    liveUrl: null,
+    githubUrl: 'https://github.com/JyotirmoyBiswas11/google-meet-bot',
   },
   {
     id: 'easyrx-ecommerce',
@@ -161,19 +186,35 @@ export const INITIAL_PROJECTS: Array<Omit<Project, 'createdAt' | 'updatedAt'>> =
     githubUrl: 'https://github.com/JyotirmoyBiswas11',
   },
   {
-    id: 'google-meet-ai-bot',
-    title: 'Google Meet AI Telemetry & Real-Time Event Bot',
-    slug: 'google-meet-ai-telemetry-bot',
-    category: 'IoT',
+    id: 'task-up-workspace',
+    title: 'Task-Up — Collaborative Task & Workspace Manager',
+    slug: 'task-up-collaborative-workspace',
+    category: 'Full-Stack',
     status: 'published',
-    featured: true,
-    coverImageUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
+    featured: false,
+    coverImageUrl: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1200&q=80',
     shortDescription:
-      'Automated meeting participant bot connecting Google Meet API with GCP Pub/Sub to track live telemetric events and deliver structured summaries.',
+      'Productivity and agile workflow dashboard featuring state persistence, task lifecycle management, and clean user interfaces.',
     businessProblem:
-      'Distributed field operations required automated action item capture and incident logging from dispatch coordination calls. Designed an event-driven bot that ingests live streams and posts structured JSON summaries to internal webhooks.',
-    techStack: ['Node.js', 'Google Meet API', 'GCP Pub/Sub', 'Webhooks', 'REST APIs'],
+      'Agile engineering teams require lightweight, zero-bloat tracking for sprint velocity, issue assignments, and real-time board updates.',
+    techStack: ['JavaScript', 'React', 'Node.js', 'Express.js', 'REST APIs'],
     liveUrl: null,
+    githubUrl: 'https://github.com/JyotirmoyBiswas11/Task-Up',
+  },
+  {
+    id: 'mediguide-ai-extractor',
+    title: 'Mediguide AI — Clinical Intelligence & Consultation Extractor',
+    slug: 'mediguide-ai-consultation-extractor',
+    category: 'AI/Data',
+    status: 'published',
+    featured: false,
+    coverImageUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
+    shortDescription:
+      'Healthcare AI application that captures consultation audio, transcribes doctor-patient dialogues, and generates structured clinical summaries.',
+    businessProblem:
+      'Physicians spend excessive hours writing medical records, driving clinical burnout. Engineered a speech transcription and LLM extraction flow to automate structured EHR notes and diagnosis summaries.',
+    techStack: ['React.js', 'Node.js', 'Firebase', 'Gemini AI API', 'Web Audio API'],
+    liveUrl: 'https://app.octopussaas.com',
     githubUrl: 'https://github.com/JyotirmoyBiswas11',
   },
   {
