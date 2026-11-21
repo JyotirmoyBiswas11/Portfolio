@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
-import { CheckCircle2, Send, AlertCircle, Mail, MapPin, Phone, ShieldCheck, Sparkles } from 'lucide-react'
+import { CheckCircle2, Send, AlertCircle, Mail, MapPin, Phone, ShieldCheck } from 'lucide-react'
 import { Button, Input, Textarea } from '@/components/ui'
 import { db } from '@/lib/firebase'
 

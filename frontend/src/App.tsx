@@ -1,3 +1,4 @@
+import type { ReactElement } from 'react'
 import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { useThemeStore } from '@/stores/theme.store'
@@ -6,7 +7,7 @@ import { AdminPage } from '@/pages/AdminPage'
 import { AdminLoginPage } from '@/pages/AdminLoginPage'
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute'
 
-export default function App(): JSX.Element {
+export default function App(): ReactElement {
   const { theme } = useThemeStore()
 
   useEffect(() => {

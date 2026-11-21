@@ -10,7 +10,6 @@ import {
   deleteDoc,
   updateDoc,
   serverTimestamp,
-  Timestamp,
 } from 'firebase/firestore'
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage'
 import {
@@ -121,9 +120,9 @@ export function AdminPage() {
     navigate('/admin/login')
   }
 
-  // Seed Firestore pmtool with initial verified data
+  // Seed Firestore with initial verified data
   const handleSeedDatabase = async () => {
-    if (!window.confirm('This will seed the initial 6 projects and verified profile to Firestore "pmtool" database. Continue?')) {
+    if (!window.confirm('This will seed the initial projects and verified profile to Firestore. Continue?')) {
       return
     }
     setSeeding(true)
@@ -144,7 +143,7 @@ export function AdminPage() {
         })
       }
 
-      setSeedSuccess('Successfully seeded profile and all 6 projects into Firestore pmtool database!')
+      setSeedSuccess('Successfully seeded profile and all projects into Firestore!')
       await fetchProjects()
       await fetchProfile()
     } catch (err) {
@@ -313,7 +312,7 @@ export function AdminPage() {
               </h1>
               <p className="text-[10px] text-[var(--color-muted)] flex items-center gap-1">
                 <ShieldCheck className="h-3 w-3 text-emerald-500" />
-                Firebase App Check Active · Database: pmtool
+                Firebase App Check Active · Database: (default)
               </p>
             </div>
           </div>
@@ -402,7 +401,7 @@ export function AdminPage() {
             className="cursor-pointer text-xs border-emerald-500/30 text-emerald-500 hover:bg-emerald-500/10"
           >
             <Database className="h-3.5 w-3.5" />
-            <span>{seeding ? 'Seeding Firestore...' : '1-Click Seed pmtool DB'}</span>
+            <span>{seeding ? 'Seeding Firestore...' : '1-Click Seed Firestore'}</span>
           </Button>
         </div>
 
@@ -616,14 +615,14 @@ export function AdminPage() {
             {/* Projects Table */}
             {loadingProjects ? (
               <div className="p-12 text-center text-[var(--color-muted)] text-sm">
-                Loading projects from Firestore pmtool...
+                Loading projects from Firestore...
               </div>
             ) : projects.length === 0 ? (
               <div className="p-12 text-center rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] space-y-3">
                 <Database className="h-8 w-8 text-[var(--color-muted)] mx-auto opacity-50" />
                 <p className="text-sm font-medium">No projects in Firestore yet.</p>
                 <p className="text-xs text-[var(--color-muted)]">
-                  Click the <strong>1-Click Seed pmtool DB</strong> button above to populate the verified initial projects!
+                  Click the <strong>1-Click Seed Firestore</strong> button above to populate the verified initial projects!
                 </p>
               </div>
             ) : (

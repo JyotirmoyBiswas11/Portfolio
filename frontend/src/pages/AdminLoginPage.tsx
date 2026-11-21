@@ -137,7 +137,7 @@ export function AdminLoginPage() {
 
         <div className="text-center mt-6 flex items-center justify-center gap-1.5 text-xs text-[var(--color-muted)]">
           <ShieldCheck className="h-4 w-4 text-emerald-500" />
-          <span>App Check Enforced · Database: <code className="font-mono text-[var(--color-accent)]">pmtool</code></span>
+          <span>App Check Enforced · Database: <code className="font-mono text-[var(--color-accent)]">(default)</code></span>
         </div>
       </motion.div>
     </div>

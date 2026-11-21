@@ -201,7 +201,7 @@ BEHAVIORAL RULES:
 4. Dynamic Visualization & Aggregation Specs rendered with Recharts.
 
 • **Architecture**: React 19 Frontend + Express.js Backend on GCP Cloud Run
-• **Storage & Security**: Firebase Cloud Storage with resumable uploads, App Check (reCAPTCHA v3), and Firestore (\`pmtool\` database)
+• **Storage & Security**: Firebase Cloud Storage with resumable uploads, App Check (reCAPTCHA v3), and Firestore
 • **Live Demo**: https://my-projects-2562a.web.app/
 • **GitHub Repo**: https://github.com/JyotirmoyBiswas11/agentic-ai-data-extractor`
         } else if (lower.includes('availab') || lower.includes('work') || lower.includes('visa') || lower.includes('permit') || lower.includes('student')) {
