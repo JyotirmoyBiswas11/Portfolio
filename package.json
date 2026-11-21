@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-jyotirmoy-biswas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SaaS-grade personal portfolio website for Jyotirmoy Biswas (Full-Stack Developer & BI Engineer, Munich)",
+  "scripts": {
+    "dev": "pnpm --dir frontend dev",
+    "build": "pnpm --dir frontend build",
+    "preview": "pnpm --dir frontend preview",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:firestore": "firebase deploy --only firestore",
+    "deploy": "firebase deploy"
+  }
+}

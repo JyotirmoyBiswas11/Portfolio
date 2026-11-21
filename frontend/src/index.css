@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* ── Design System Tokens ── */
+:root {
+  --color-text: #0F172A;
+  --color-background: #F8FAFC;
+  --color-primary: #4F46E5;
+  --color-secondary: #E2E8F0;
+  --color-accent: #06B6D4;
+  --color-border: #CBD5E1;
+  --color-muted: #64748B;
+  --color-card: #FFFFFF;
+}
+
+.dark {
+  --color-text: #E6EDF3;
+  --color-background: #0B0F1A;
+  --color-primary: #4F46E5;
+  --color-secondary: #1E293B;
+  --color-accent: #22D3EE;
+  --color-border: #1E293B;
+  --color-muted: #94A3B8;
+  --color-card: #0F172A;
+}
+
+/* ── Base Styles ── */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+}
+
+/* ── Scrollbar (webkit) ── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+
+/* ── Selection ── */
+::selection {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
