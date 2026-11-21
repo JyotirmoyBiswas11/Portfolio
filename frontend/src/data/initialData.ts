@@ -43,7 +43,7 @@ export const INITIAL_PROFILE: Omit<Profile, 'updatedAt'> & { updatedAt?: Timesta
       period: 'Sep 2024 – Aug 2026',
       location: 'Kolkata, India',
       description: [
-        'Core contributor to the full-stack architecture of Octopus SaaS (app.octopussaas.com), an enterprise medical waste and logistics compliance platform.',
+        'Core contributor to the full-stack architecture of Octopus SaaS, an enterprise medical waste and logistics compliance platform.',
         'Architected Fleet Management, Routing Optimization, and automated HIPAA-compliant billing modules serving 10,000+ daily active users.',
         'Engineered a multi-level organizational hierarchy (Region, Territory, Satellite, Generator) enabling enterprise clients to model complex operational structures.',
         'Engineered cloud data migration pipelines via Node.js, Firebase Cloud Functions, and Tasks, migrating 50,000+ legacy records with 100% data integrity.',
@@ -134,7 +134,7 @@ export const INITIAL_PROJECTS: Array<Omit<Project, 'createdAt' | 'updatedAt'>> =
     businessProblem:
       'Enterprise waste management clients struggled with fragmented compliance audits and manual billing. Architected automated dispatch routing, hierarchical location modeling (Region > Territory > Generator), and HIPAA compliance workflows.',
     techStack: ['React.js', 'Node.js', 'TypeScript', 'Firebase', 'GCP', 'REST APIs'],
-    liveUrl: 'https://app.octopussaas.com',
+    liveUrl: null,
     githubUrl: 'https://github.com/JyotirmoyBiswas11',
   },
   {
@@ -150,7 +150,7 @@ export const INITIAL_PROJECTS: Array<Omit<Project, 'createdAt' | 'updatedAt'>> =
     businessProblem:
       'Onboarding enterprise clients took days of error-prone manual spreadsheets. Engineered an asynchronous cloud pipeline with retry queues and batch validation, reducing onboarding time from days to minutes with zero data loss.',
     techStack: ['Node.js', 'Firebase Cloud Functions', 'Google Cloud Tasks', 'Firestore', 'GCP'],
-    liveUrl: 'https://app.octopussaas.com',
+    liveUrl: null,
     githubUrl: 'https://github.com/JyotirmoyBiswas11',
   },
   {
@@ -182,7 +182,7 @@ export const INITIAL_PROJECTS: Array<Omit<Project, 'createdAt' | 'updatedAt'>> =
     businessProblem:
       'Medical facilities required frictionless restocking for compliant packaging without leaving their operational portal. Built an embedded storefront with role-based requisition limits and automated fulfillment dispatch.',
     techStack: ['React.js', 'TypeScript', 'Tailwind CSS', 'Firestore', 'Stripe'],
-    liveUrl: 'https://app.octopussaas.com',
+    liveUrl: null,
     githubUrl: 'https://github.com/JyotirmoyBiswas11',
   },
   {
@@ -214,7 +214,7 @@ export const INITIAL_PROJECTS: Array<Omit<Project, 'createdAt' | 'updatedAt'>> =
     businessProblem:
       'Physicians spend excessive hours writing medical records, driving clinical burnout. Engineered a speech transcription and LLM extraction flow to automate structured EHR notes and diagnosis summaries.',
     techStack: ['React.js', 'Node.js', 'Firebase', 'Gemini AI API', 'Web Audio API'],
-    liveUrl: 'https://app.octopussaas.com',
+    liveUrl: null,
     githubUrl: 'https://github.com/JyotirmoyBiswas11',
   },
   {

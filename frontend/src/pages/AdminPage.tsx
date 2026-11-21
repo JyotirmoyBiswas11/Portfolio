@@ -559,7 +559,7 @@ export function AdminPage() {
                       onChange={(e) =>
                         setCurrentProject({ ...currentProject, liveUrl: e.target.value })
                       }
-                      placeholder="https://app.octopussaas.com"
+                      placeholder="https://my-projects-2562a.web.app"
                     />
                   </div>
 
